@@ -98,7 +98,7 @@ namespace MetricsMonitor
 
             try
             {
-                var now = DateTime.UtcNow - TimeSpan.FromDays(2);
+                var now = DateTime.UtcNow;
                 var results = await metricReader.GetTimeSeriesAsync(
                     metricId,
                     dimensionFilters,
